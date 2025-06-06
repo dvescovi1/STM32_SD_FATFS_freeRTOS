@@ -1,4 +1,4 @@
-/* USER CODE BEGIN Header */
+
 /**
   ******************************************************************************
   * @file           : fatfs_platform.c
@@ -15,7 +15,7 @@
   *
   ******************************************************************************
 */
-/* USER CODE END Header */
+
 #include "fatfs_platform.h"
 
 uint8_t	BSP_PlatformIsDetected(void) {
@@ -25,8 +25,8 @@ uint8_t	BSP_PlatformIsDetected(void) {
     {
         status = SD_NOT_PRESENT;
     }
-    /* USER CODE BEGIN 1 */
+
     /* user code can be inserted here */
-    /* USER CODE END 1 */
+
     return status;
 }

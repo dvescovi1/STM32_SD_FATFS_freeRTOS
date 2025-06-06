@@ -1,4 +1,4 @@
-/* USER CODE BEGIN Header */
+
 /**
  ******************************************************************************
   * @file    bsp_driver_sd.h (based on stm32l4r9i_eval_sd.h)
@@ -15,8 +15,7 @@
   * If no LICENSE file comes with this software, it is provided AS-IS.
   *
   ******************************************************************************
-  */
-/* USER CODE END Header */
+
 /* Define to prevent recursive inclusion -------------------------------------*/
 #ifndef __STM32L4_SD_H
 #define __STM32L4_SD_H
@@ -58,11 +57,11 @@
 
 #ifdef OLD_API
 /* kept to avoid issue when migrating old projects. */
-/* USER CODE BEGIN 0 */
 
-/* USER CODE END 0 */
+
+
 #else
-/* USER CODE BEGIN BSP_H_CODE */
+
 /* Exported functions --------------------------------------------------------*/
 uint8_t BSP_SD_Init(void);
 uint8_t BSP_SD_ITConfig(void);
@@ -76,15 +75,15 @@ uint8_t BSP_SD_Erase(uint32_t StartAddr, uint32_t EndAddr);
 uint8_t BSP_SD_GetCardState(void);
 void    BSP_SD_GetCardInfo(BSP_SD_CardInfo *CardInfo);
 uint8_t BSP_SD_IsDetected(void);
-/* USER CODE END BSP_H_CODE */
+
 #endif
-/* USER CODE BEGIN CallBacksSection_H */
+
 /* These __weak functions can be surcharged by application code in case the current settings
    (eg. interrupt priority, callbacks implementation) need to be changed for specific application needs */
 void    BSP_SD_AbortCallback(void);
 void    BSP_SD_WriteCpltCallback(void);
 void    BSP_SD_ReadCpltCallback(void);
-/* USER CODE END CallBacksSection_H */
+
 #ifdef __cplusplus
 }
 #endif
