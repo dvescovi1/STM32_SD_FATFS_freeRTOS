@@ -40,6 +40,9 @@ add_executable(${CMAKE_PROJECT_NAME})
 # Add STM32CubeMX generated sources
 add_subdirectory(cmake/stm32cubemx)
 
+# Add FatFs port library
+add_subdirectory(Middleware/Third_Party/FatFs)
+
 # Link directories setup
 target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined library search paths
@@ -48,10 +51,6 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
 # Add sources to executable
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user sources here
-    ${CMAKE_SOURCE_DIR}/Middleware/Third_Party/FatFs/src/diskio.c
-    ${CMAKE_SOURCE_DIR}/Middleware/Third_Party/FatFs/src/ff.c
-    ${CMAKE_SOURCE_DIR}/Middleware/Third_Party/FatFs/src/ff_gen_drv.c
-    ${CMAKE_SOURCE_DIR}/Middleware/Third_Party/FatFs/src/option/syscall.c
     ${CMAKE_SOURCE_DIR}/Core/Src/fatfs.c
     ${CMAKE_SOURCE_DIR}/Core/Src/bsp_driver_sd.c
     ${CMAKE_SOURCE_DIR}/Core/Src/sd_diskio.c
@@ -61,8 +60,8 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
 # Add include paths
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined include paths
-    ${CMAKE_SOURCE_DIR}/Middleware/Third_Party/FatFs/src
     ${CMAKE_SOURCE_DIR}/Core/Inc
+    ${CMAKE_SOURCE_DIR}/Middleware/Third_Party/FatFs/src
 )
 
 # Add project symbols (macros)
@@ -73,6 +72,6 @@ target_compile_definitions(${CMAKE_PROJECT_NAME} PRIVATE
 # Add linked libraries
 target_link_libraries(${CMAKE_PROJECT_NAME}
     stm32cubemx
-
     # Add user defined libraries
-)
+    fatfs
+    )

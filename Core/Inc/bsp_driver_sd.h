@@ -15,7 +15,8 @@
   * If no LICENSE file comes with this software, it is provided AS-IS.
   *
   ******************************************************************************
-
+  */
+  
 /* Define to prevent recursive inclusion -------------------------------------*/
 #ifndef __STM32L4_SD_H
 #define __STM32L4_SD_H
