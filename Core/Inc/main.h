@@ -62,6 +62,7 @@ void Error_Handler(void);
 #define SD_DETECT_GPIO_Port GPIOD
 #define SD_Power_Pin GPIO_PIN_7
 #define SD_Power_GPIO_Port GPIOC
+
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
@@ -71,5 +72,3 @@ void Error_Handler(void);
 #endif
 
 #endif /* __MAIN_H */
-
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

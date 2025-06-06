@@ -1,0 +1,8 @@
+C:/Users/dvesc/Documents/STM32/example_fatfs_app/STM32_SD_FATFS_freeRTOS/build/CMakeFiles/sdCard.dir
+C:/Users/dvesc/Documents/STM32/example_fatfs_app/STM32_SD_FATFS_freeRTOS/build/CMakeFiles/edit_cache.dir
+C:/Users/dvesc/Documents/STM32/example_fatfs_app/STM32_SD_FATFS_freeRTOS/build/CMakeFiles/rebuild_cache.dir
+C:/Users/dvesc/Documents/STM32/example_fatfs_app/STM32_SD_FATFS_freeRTOS/build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
+C:/Users/dvesc/Documents/STM32/example_fatfs_app/STM32_SD_FATFS_freeRTOS/build/cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir
+C:/Users/dvesc/Documents/STM32/example_fatfs_app/STM32_SD_FATFS_freeRTOS/build/cmake/stm32cubemx/CMakeFiles/FatFs.dir
+C:/Users/dvesc/Documents/STM32/example_fatfs_app/STM32_SD_FATFS_freeRTOS/build/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
+C:/Users/dvesc/Documents/STM32/example_fatfs_app/STM32_SD_FATFS_freeRTOS/build/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir

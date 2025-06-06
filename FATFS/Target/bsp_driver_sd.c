@@ -464,4 +464,3 @@ static HAL_StatusTypeDef SD_DMAConfigTx(SD_HandleTypeDef *hsd)
 
 /* USER CODE END AdditionalCode */
 
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
