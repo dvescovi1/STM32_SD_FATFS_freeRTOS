@@ -21,12 +21,12 @@
 #include "main.h"
 #include "cmsis_os.h"
 #include "dma.h"
-#include "fatfs.h"
 #include "sdmmc.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "fatfs.h"
 
 /* USER CODE END Includes */
 
@@ -93,8 +93,8 @@ int main(void)
   MX_GPIO_Init();
   MX_DMA_Init();
   MX_SDMMC1_SD_Init();
-  MX_FATFS_Init();
   /* USER CODE BEGIN 2 */
+  MX_FATFS_Init();
 
   /* USER CODE END 2 */
 

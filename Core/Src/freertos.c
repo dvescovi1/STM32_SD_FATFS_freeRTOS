@@ -124,7 +124,6 @@ void MX_FREERTOS_Init(void) {
 /* USER CODE END Header_StartDefaultTask */
 void StartDefaultTask(void const * argument)
 {
-  (void)argument;
   /* USER CODE BEGIN StartDefaultTask */
   char read_buff[20] = {0};
   char write_buff[20] = {0};
