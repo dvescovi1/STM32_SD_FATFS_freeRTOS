@@ -159,6 +159,7 @@ static int SD_CheckStatusWithTimeout(uint32_t timeout)
 
 static DSTATUS SD_CheckStatus(BYTE lun)
 {
+  (void)lun;
   Stat = STA_NOINIT;
 
   if(BSP_SD_GetCardState() == SD_TRANSFER_OK)
