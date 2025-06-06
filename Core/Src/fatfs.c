@@ -39,3 +39,5 @@ DWORD get_fattime(void)
 {
   return 0;
 }
+
+/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
