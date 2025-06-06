@@ -48,10 +48,10 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
 # Add sources to executable
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user sources here
-    ${CMAKE_SOURCE_DIR}/MyFatFs/src/diskio.c
-    ${CMAKE_SOURCE_DIR}/MyFatFs/src/ff.c
-    ${CMAKE_SOURCE_DIR}/MyFatFs/src/ff_gen_drv.c
-    ${CMAKE_SOURCE_DIR}/MyFatFs/src/option/syscall.c
+    ${CMAKE_SOURCE_DIR}/Middleware/Third_Party/FatFs/src/diskio.c
+    ${CMAKE_SOURCE_DIR}/Middleware/Third_Party/FatFs/src/ff.c
+    ${CMAKE_SOURCE_DIR}/Middleware/Third_Party/FatFs/src/ff_gen_drv.c
+    ${CMAKE_SOURCE_DIR}/Middleware/Third_Party/FatFs/src/option/syscall.c
     ${CMAKE_SOURCE_DIR}/Core/Src/fatfs.c
     ${CMAKE_SOURCE_DIR}/Core/Src/bsp_driver_sd.c
     ${CMAKE_SOURCE_DIR}/Core/Src/sd_diskio.c
@@ -61,7 +61,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
 # Add include paths
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined include paths
-    ${CMAKE_SOURCE_DIR}/MyFatFs/src
+    ${CMAKE_SOURCE_DIR}/Middleware/Third_Party/FatFs/src
     ${CMAKE_SOURCE_DIR}/Core/Inc
 )
 
