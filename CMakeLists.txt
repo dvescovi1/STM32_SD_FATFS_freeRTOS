@@ -52,18 +52,18 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     ${CMAKE_SOURCE_DIR}/MyFatFs/src/ff.c
     ${CMAKE_SOURCE_DIR}/MyFatFs/src/ff_gen_drv.c
     ${CMAKE_SOURCE_DIR}/MyFatFs/src/option/syscall.c
-    ${CMAKE_SOURCE_DIR}/FATFS/App/fatfs.c
-    ${CMAKE_SOURCE_DIR}/FATFS/Target/bsp_driver_sd.c
-    ${CMAKE_SOURCE_DIR}/FATFS/Target/sd_diskio.c
-    ${CMAKE_SOURCE_DIR}/FATFS/Target/fatfs_platform.c
+    ${CMAKE_SOURCE_DIR}/FAT/App/fatfs.c
+    ${CMAKE_SOURCE_DIR}/FAT/Target/bsp_driver_sd.c
+    ${CMAKE_SOURCE_DIR}/FAT/Target/sd_diskio.c
+    ${CMAKE_SOURCE_DIR}/FAT/Target/fatfs_platform.c
 )
 
 # Add include paths
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined include paths
     ${CMAKE_SOURCE_DIR}/MyFatFs/src
-    ${CMAKE_SOURCE_DIR}/FATFS/Target
-    ${CMAKE_SOURCE_DIR}/FATFS/App
+    ${CMAKE_SOURCE_DIR}/FAT/Target
+    ${CMAKE_SOURCE_DIR}/FAT/App
 )
 
 # Add project symbols (macros)
