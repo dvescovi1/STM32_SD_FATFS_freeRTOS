@@ -94,7 +94,7 @@ int main(void)
   MX_DMA_Init();
   MX_SDMMC1_SD_Init();
   /* USER CODE BEGIN 2 */
-  MX_FATFS_Init();
+  FATFS_Init();
 
   /* USER CODE END 2 */
 
