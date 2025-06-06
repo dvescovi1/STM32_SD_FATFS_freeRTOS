@@ -251,6 +251,7 @@ DSTATUS SD_status(BYTE lun)
 
 DRESULT SD_read(BYTE lun, BYTE *buff, DWORD sector, UINT count)
 {
+  (void)lun;
   uint8_t ret;
   DRESULT res = RES_ERROR;
   uint32_t timer;
@@ -412,6 +413,7 @@ DRESULT SD_read(BYTE lun, BYTE *buff, DWORD sector, UINT count)
 
 DRESULT SD_write(BYTE lun, const BYTE *buff, DWORD sector, UINT count)
 {
+  (void)lun;
   DRESULT res = RES_ERROR;
   uint32_t timer;
 
@@ -579,6 +581,7 @@ DRESULT SD_write(BYTE lun, const BYTE *buff, DWORD sector, UINT count)
 #if _USE_IOCTL == 1
 DRESULT SD_ioctl(BYTE lun, BYTE cmd, void *buff)
 {
+  (void)lun;
   DRESULT res = RES_ERROR;
   BSP_SD_CardInfo CardInfo;
 

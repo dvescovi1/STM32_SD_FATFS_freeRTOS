@@ -124,10 +124,11 @@ void MX_FREERTOS_Init(void) {
 /* USER CODE END Header_StartDefaultTask */
 void StartDefaultTask(void const * argument)
 {
+  (void)argument;
   /* USER CODE BEGIN StartDefaultTask */
-	char read_buff[20] = {0};
-	char write_buff[20] = {0};
-	bool is_successful = false;
+  char read_buff[20] = {0};
+  char write_buff[20] = {0};
+  bool is_successful = false;
 
 	FRESULT res;
 	if((res = f_mount(&SDFatFS, SDPath, 1)) == FR_OK)
