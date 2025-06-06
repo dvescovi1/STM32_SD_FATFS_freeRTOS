@@ -34,10 +34,11 @@
 */
 
 int ff_cre_syncobj (	/* 1:Function succeeded, 0:Could not create the sync object */
-	BYTE vol,			/* Corresponding volume (logical drive number) */
-	_SYNC_t *sobj		/* Pointer to return the created sync object */
+  BYTE vol,			/* Corresponding volume (logical drive number) */
+  _SYNC_t *sobj		/* Pointer to return the created sync object */
 )
 {
+    (void)vol;
 
     int ret;
 #if _USE_MUTEX
